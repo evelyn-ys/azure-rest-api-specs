@@ -1510,7 +1510,7 @@
         "operationId": "LocalUsers_Get",
         "description": "Get the local user of the storage account by username.",
         "x-ms-examples": {
-          "StorageAccountGetLocalUsers": {
+          "StorageAccountGetLocalUser": {
             "$ref": "./examples/StorageAccountGetLocalUser.json"
           }
         },
@@ -1553,10 +1553,10 @@
         "operationId": "LocalUsers_CreateOrUpdate",
         "description": "Create or update the local user properties of the storage account.",
         "x-ms-examples": {
-          "StorageAccountCreateLocalUsers": {
+          "StorageAccountLocalUsers_Create": {
             "$ref": "./examples/StorageAccountCreateLocalUsers.json"
           },
-          "StorageAccountUpdateLocalUsers": {
+          "StorageAccountLocalUsers_Update": {
             "$ref": "./examples/StorageAccountUpdateLocalUsers.json"
           }
         },
@@ -1650,7 +1650,7 @@
         "tags": [
           "LocalUsers"
         ],
-        "operationId": "LocalUserKeys_List",
+        "operationId": "LocalUsers_ListKeys",
         "description": "List the local user keys.",
         "x-ms-examples": {
           "StorageAccountListLocalUserKeys": {

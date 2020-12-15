@@ -94,7 +94,7 @@
           }
         },
         "x-ms-examples": {
-          "List Domain Service": {
+          "List Domain Service By Sub": {
             "$ref": "./examples/ListDomainServicesBySubscription.json"
           }
         },
@@ -137,7 +137,7 @@
           }
         },
         "x-ms-examples": {
-          "List Domain Service": {
+          "List Domain Service By Group": {
             "$ref": "./examples/ListDomainServicesByResourceGroup.json"
           }
         },

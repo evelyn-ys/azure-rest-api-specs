@@ -33,7 +33,7 @@
           "postalCode": "98052",
           "city": "WA",
           "state": "WA",
-          "country": "USA"
+          "country": "United States"
         }
       }
     }
@@ -60,7 +60,7 @@
             "postalCode": "98052",
             "city": "WA",
             "state": "WA",
-            "country": "USA"
+            "country": "United States"
           },
           "currentStatus": {
             "status": "Untracked",

@@ -45,6 +45,10 @@ cli:
             op: GetExtendedInformation|GetNetworkSettings|CreateOrUpdateSecuritySettings|UploadCertificate
           hidden: true
 
+        - where:
+            group: "*"
+          min-api: "2019-08-01"
+
 # -------- rename single command within a group --------
         - where:
             group: Jobs
@@ -139,60 +143,4 @@ cli:
             op: CreateOrUpdate#Create
             param: addressLine1|postalCode|city|state|country|contactPerson|companyName|phone|emailList
           required: true
-
-        - where:
-            param: addressLine1
-          alias: address_line1
-
-        - where:
-            param: addressLine2
-          alias: address_line2
-
-        - where:
-            param: addressLine3
-          alias: address_line3
-
-        - where:
-            param: postalCode
-          alias: postal_code
-
-        - where:
-            param: city
-          alias: city
-
-        - where:
-            param: state
-          alias: state
-
-        - where:
-            param: country
-          alias: country
-
-        - where:
-            param: contactPerson
-          alias: contact_person
-
-        - where:
-            param: companyName
-          alias: company_name
-
-        - where:
-            param: phone
-          alias: phone
-
-        - where:
-            param: emailList
-          alias: email_list
-
-        - where:
-            group: Orders
-            op: CreateOrUpdate#Create|CreateOrUpdate#Update
-            param: status
-          alias: status
-
-        - where:
-            group: Orders
-            op: CreateOrUpdate#Create|CreateOrUpdate#Update
-            param: comments
-          alias: comments
 ```

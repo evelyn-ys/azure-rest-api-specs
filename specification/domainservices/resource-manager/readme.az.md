@@ -4,15 +4,16 @@ These settings apply only when `--az` is specified on the command line.
 
 ``` yaml $(az)
 az:
-  extensions: adds
+  extensions: ad
   package-name: azure-mgmt-domainservices
   namespace: azure.mgmt.domainservices
-az-output-folder: $(azure-cli-extension-folder)/src/adds
-python-sdk-output-folder: "$(az-output-folder)/azext_adds/vendored_sdks/domainservices"
+az-output-folder: $(azure-cli-extension-folder)/src/ad
+python-sdk-output-folder: "$(az-output-folder)/azext_ad/vendored_sdks/domainservices"
+extension-mode: stable
 
 directive: 
     - where:
-        group: adds domain-service
+        group: ad domain-service
       set:
         group: ad ds
 

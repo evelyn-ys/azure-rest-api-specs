@@ -60,4 +60,39 @@ cli:
             param: domainName
           alias:
             - domain
+
+        - where:
+            param: domainConfigurationType
+          alias:
+            - domain_config_type
+
+        - where:
+            param: additionalRecipients
+          alias:
+            - notify_others
+
+        - where:
+            param: pfxCertificate
+          alias:
+            - pfx_cert
+
+        - where:
+            param: pfxCertificatePassword
+          alias:
+            - pfx_cert_pwd
+
+        - where:
+            param: syncNtlmPasswords
+          alias:
+            - sync_ntlm_pwd
+
+        - where:
+            param: syncKerberosPasswords
+          alias:
+            - sync_kerberos_pwd
+
+        - where:
+            param: syncOnPremPasswords
+          alias:
+            - sync_on_prem_pwd
 ```

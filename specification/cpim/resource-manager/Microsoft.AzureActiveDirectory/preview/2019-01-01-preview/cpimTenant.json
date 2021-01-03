@@ -209,7 +209,7 @@
           "B2CTenants"
         ],
         "x-ms-examples": {
-          "Get tenant": {
+          "Update tenant": {
             "$ref": "./examples/updateTenant.json"
           }
         },

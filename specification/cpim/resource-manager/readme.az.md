@@ -22,5 +22,20 @@ cli:
       - where:
           group: Operations
         hidden: true
+
+      - where:
+          param: resourceName
+        alias:
+          - name
+
+      - where:
+          param: name
+        alias:
+          - sku
+
+      - where:
+          type: CreateTenantRequestBody
+          prop: properties
+        cli-flatten: true
           
 ```

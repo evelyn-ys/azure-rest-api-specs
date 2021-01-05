@@ -29,6 +29,12 @@ cli:
           - name
 
       - where:
+          group: B2CTenants
+          op: Create
+          param: name
+        required: true
+
+      - where:
           param: name
         alias:
           - sku
@@ -37,5 +43,16 @@ cli:
           type: CreateTenantRequestBody
           prop: properties
         cli-flatten: true
-          
+
+      - where:
+          group: B2CTenants
+          op: Create
+          param: displayName|countryCode
+        required: true
+
+      - where:
+          group: B2CTenants
+          op: Update
+          param: tenantId
+        hidden: true
 ```
